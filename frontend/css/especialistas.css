@@ -257,9 +257,10 @@ select:focus {
     }
 
 
-    .especialista-lista-box {
-        display: grid;
-        grid-template-columns: 80%;
+    .especialistas, .especialista-lista-box, .especialista-box {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
   }

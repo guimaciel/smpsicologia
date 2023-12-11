@@ -464,27 +464,47 @@
   }
 
   @media (max-width: 1200px) {
+    .content, .content-top-apresentacao, .content-top-img, .content-agende, .content-agende-consulta, .especialista-lista-3, .especialista-box,
+     .cuidando-sm, .cuidando-sm-foto, .cuidando-sm-foto-media, .faq, .faq-left, .parceria, .parceria-left, .faq-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      row-gap: 1rem;
+      padding: 5px;
+    }
+
+    .parceria-parceiros {
+      grid-template-columns: 45% 45%;
+      justify-content: center;
+      align-items: center;
+    }
+
     .content-agende-consulta {
+      text-align: center;
+    }
+    /* .content-agende-consulta {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 1rem;
-    }
-    .especialista-lista-3 {
+    } */
+    /* .especialista-lista-3 {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
+    } */
   
-    .especialista-box {
-      max-width: none;
-      display: grid;
-      grid-template-columns: 100%;
-      margin: 1rem;
-      padding: 1rem;
-      max-width: 600px;
-      width: fit-content;
-    }
+     /* .especialista-box { */
+      /* width: 10%; */
+      /* display: flex;
+      flex-direction: column; */
+      /* grid-template-columns: 100%; */
+      /* margin: 1rem 0; */
+      /* padding: 1rem 0px; */
+      /* max-width: 600px; */
+      /* width: 100%; */
+    /* }  */
   
     .cuidando-sm-foto {
       /* display: none; */

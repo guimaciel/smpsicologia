@@ -197,7 +197,7 @@ footer {
 
 }
 
-.footer-partners>img {
+.footer-partners>a>img {
   object-fit: cover;
   width: 100%;
 }

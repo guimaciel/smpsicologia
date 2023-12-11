@@ -1,0 +1,265 @@
+.top-content {
+    display: grid;
+    grid-template-columns: 50%;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1rem 6rem;
+}
+
+.filters {
+    width: 100%;
+    background-color: #c1c1c1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 0.3rem;
+    width: 300px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0.4rem 1rem;    
+}
+
+label {
+    font-size: 10px;
+}
+
+select {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.especialistas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #EBEBEB;
+    padding: 2rem;
+    
+}
+.especialista-lista-box {
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem;
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+  
+  .especialista-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem 1rem;
+  }
+  
+  .especialista-box-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .especialista-crpstatus {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  
+  .especialista-crp {
+    padding: 0.5rem 2rem;
+    border: 1px solid #000;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  
+  .especialista-status {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 12px;
+    font-size: 12px;
+    background-color: #4f4f4f;
+    color: #fff;
+  }
+  
+  .especialista-nome {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .especialista-idioma-flag {
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  
+  .especialista-idioma-avaliacao {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .flex-row-space {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  .flex-row-space > p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .especialista-valor {
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 12px;
+    background-color: #d7d7d7;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .especialista-experiencias {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+  }
+
+  .especialista-agenda {
+    display: flex;
+    flex-direction: column;
+  }
+  .especialista-agenda-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .especialista-agenda-horarios {
+    display: flex;
+    column-gap: 0.5rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+  
+  .especialista-agenda-horarios::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Define the thumb style */
+  .especialista-agenda-horarios::-webkit-scrollbar-thumb {
+    background: #4f4f4f;
+    border-radius: 5px;
+  }
+  /* Define the track style */
+  .especialista-agenda-horarios::-webkit-scrollbar-track {
+    background-color: #d9d9d9;
+    border: 1px solid #ccc;
+  }
+  
+  .especialista-horario {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin: 0;
+  }
+  
+  .especialista-agenda-horarios .especialista-horario:first-child {
+    margin-left: auto;
+  }
+  
+  .especialista-agenda-horarios .especialista-horario:last-child {
+    margin-right: auto;
+  }
+  
+  .especialista-estou-disponivel {
+    margin: 1rem 0;
+    border-radius: 12px;
+    background-color: #4f4f4f;
+    color: #fff;
+    font-size: 14px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .especialistas-conhecamais {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .especialistas-conhecamais > button {
+    background-color: #4f4f4f;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem 7rem;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 1300px) {
+    .top-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .filters {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        padding: 1rem 1rem;
+        row-gap: 1rem;
+        justify-content: center;
+    }
+
+    .select-box {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        column-gap: 1rem;
+    }
+
+    .especialista-lista-box {
+        display: grid;
+        grid-template-columns: 30% 30%;
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .filters {
+        display: grid;
+        grid-template-columns: 90%;
+        padding: 1rem 1rem;
+        row-gap: 1rem;
+        justify-content: center;
+    }
+
+
+    .especialista-lista-box {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+  }

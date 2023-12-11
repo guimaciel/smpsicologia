@@ -1,0 +1,753 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SM Psicologia</title>
+
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/heart.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/especialistas.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html">
+        <img class="logo-top" src="./img/logo01.png" />
+      </a>
+      <div class="top-menu" id="top-menu">
+        <div class="top-menu-group">
+          <a href="#" class="menu-top">Quem Somos</a>
+          <a href="#" class="menu-top">Perguntas Frequentes</a>
+          <a href="especialistas.html" class="menu-top">Parceiros</a>
+          <a href="#" class="menu-top">Sou Especialista</a>
+        </div>
+        <div class="top-menu-group">
+          <a href="#" class="menu-top-dark">Agende sua consulta</a>
+          <a href="#" class="menu-top-light">Entrar</a>
+          <a href="#" class="menu-top-dark">Criar Conta</a>
+        </div>
+      </div>
+      <div class="top-menu-resp">
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <content>
+      <div class="top-content">
+        <h2>
+          Estamos aqui para ajudar. Encontre o especialista ideal para você!
+        </h2>
+        <p class="p-18">
+          Não importa onde você esteja, agende uma sessão e converse com um dos
+          nossos profissionais. Cuidar de si mesmo é um passo importante em
+          direção à transformação da sua vida.
+        </p>
+      </div>
+      <div class="filters">
+        <div class="select-box">
+          <label>Disponibilidade</label>
+          <select name="status" id="status" title="Status">
+            <option value="online">Online</option>
+            <option value="online">Offline</option>
+            <option value="online">Todos</option>
+          </select>
+        </div>
+        <div class="select-box">
+          <label>Especialidade</label>
+          <select name="especialidade">
+            <option value="00">Todas</option>
+            <option value="01">Análise do comportamento</option>
+            <option value="01">Análise do comportamento aplicada</option>
+            <option value="01">Análise transacional</option>
+            <option value="01">Psicanálise</option>
+            <option value="01">Psicologia clínica</option>
+            <option value="01">Psicologia do esporte</option>
+            <option value="01">Psicologia educacional</option>
+            <option value="01">Psicologia histórico-cultural</option>
+            <option value="01">Psicologia hospitalar</option>
+            <option value="01">Psicologia integral</option>
+            <option value="01">Psicologia oncológica</option>
+            <option value="01">Psicologia organizacional e do trabalho</option>
+            <option value="01">Psicologia perinatal</option>
+            <option value="01">Psicologia positiva</option>
+            <option value="01">Terapia cognitivo comportamental</option>
+          </select>
+        </div>
+        <div class="select-box">
+          <label>Preço</label>
+          <select name="preco">
+            <option value="00">Todos</option>
+            <option value="01">R$ 60 - 99</option>
+            <option value="02">R$ 100 - 149</option>
+            <option value="03">R$ 150 - 199</option>
+            <option value="04">R$ 200 - 400</option>
+          </select>
+        </div>
+        <div class="select-box">
+          <label>Gênero</label>
+          <select name="genero">
+            <option value="00">Todos</option>
+            <option value="01">Masculino</option>
+            <option value="02">Feminino</option>
+            <option value="03">Não Binário</option>
+          </select>
+        </div>
+      </div>
+      <div class="especialistas">
+        <div class="especialista-lista-box">
+          <!-- Especialista 1 -->
+          <div class="especialista-box">
+            <div class="especialista-box-top">
+              <img src="./img/especialista-foto.png" />
+              <div class="especialista-crpstatus">
+                <div class="especialista-crp">CRP: 04/63459</div>
+                <div class="especialista-status">online</div>
+              </div>
+              <i class="gg-heart" id="fav"></i>
+            </div>
+            <div class="especialista-nome">Pedro Santos Gosler</div>
+            <div class="especialista-idioma-avaliacao">
+              <div class="flex-row-space">
+                <div>
+                  <span class="fi fi-br fis especialista-idioma-flag"></span>
+                </div>
+                <p class="p-14">Português (+2)</p>
+              </div>
+              <div class="flex-row-space">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p class="p-14">4.8</p>
+                <p class="p-10">(48 avaliações)</p>
+              </div>
+            </div>
+            <div class="especialista-valor">R$ 110 / 50 MIN</div>
+            <div class="especialista-experiencias">
+              Experiências
+              <ul>
+                <li>Alterações de Humor</li>
+                <li>Angústia</li>
+                <li>Ansiedade</li>
+                <li>Assertividade</li>
+                <li>Autoconhecimento</li>
+                <li>Autoestima</li>
+                <li>Depressão</li>
+                <li>LGBTQI+</li>
+                <li>Identidade de Gênero / Transsexual / Transgênero</li>
+              </ul>
+            </div>
+            <div class="especialista-agenda">
+              <div class="especialista-agenda-title">
+                <p class="p-14 p-bold">Agenda</p>
+                <p class="p-10 p-regular">+ Veja mais horários</p>
+              </div>
+              <div class="especialista-agenda-horarios">
+                <p class="especialista-horario">14:30</p>
+                <p class="especialista-horario">15:00</p>
+                <p class="especialista-horario">15:30</p>
+                <p class="especialista-horario">16:00</p>
+                <p class="especialista-horario">16:30</p>
+                <p class="especialista-horario">17:00</p>
+                <p class="especialista-horario">17:30</p>
+                <p class="especialista-horario">18:00</p>
+                <p class="especialista-horario">18:30</p>
+                <p class="especialista-horario">19:00</p>
+                <p class="especialista-horario">19:30</p>
+              </div>
+            </div>
+            <div class="especialista-estou-disponivel">
+              Estou disponivel agora
+            </div>
+          </div>
+
+          <!-- Fim especialista 1-->
+          <!-- Especialista 2 -->
+          <div class="especialista-box">
+            <div class="especialista-box-top">
+              <img src="./img/especialista-foto.png" />
+              <div class="especialista-crpstatus">
+                <div class="especialista-crp">CRP: 04/63459</div>
+                <div class="especialista-status">online</div>
+              </div>
+              <i class="gg-heart" id="fav"></i>
+            </div>
+            <div class="especialista-nome">Pedro Santos Gosler</div>
+            <div class="especialista-idioma-avaliacao">
+              <div class="flex-row-space">
+                <div>
+                  <span class="fi fi-br fis especialista-idioma-flag"></span>
+                </div>
+                <p class="p-14">Português (+2)</p>
+              </div>
+              <div class="flex-row-space">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p class="p-14">4.8</p>
+                <p class="p-10">(48 avaliações)</p>
+              </div>
+            </div>
+            <div class="especialista-valor">R$ 110 / 50 MIN</div>
+            <div class="especialista-experiencias">
+              Experiências
+              <ul>
+                <li>Alterações de Humor</li>
+                <li>Angústia</li>
+                <li>Ansiedade</li>
+                <li>Assertividade</li>
+                <li>Autoconhecimento</li>
+                <li>Autoestima</li>
+                <li>Depressão</li>
+                <li>LGBTQI+</li>
+                <li>Identidade de Gênero / Transsexual / Transgênero</li>
+              </ul>
+            </div>
+            <div class="especialista-agenda">
+              <div class="especialista-agenda-title">
+                <p class="p-14 p-bold">Agenda</p>
+                <p class="p-10 p-regular">+ Veja mais horários</p>
+              </div>
+              <div class="especialista-agenda-horarios">
+                <p class="especialista-horario">14:30</p>
+                <p class="especialista-horario">15:00</p>
+                <p class="especialista-horario">15:30</p>
+                <p class="especialista-horario">16:00</p>
+                <p class="especialista-horario">16:30</p>
+                <p class="especialista-horario">17:00</p>
+                <p class="especialista-horario">17:30</p>
+                <p class="especialista-horario">18:00</p>
+                <p class="especialista-horario">18:30</p>
+                <p class="especialista-horario">19:00</p>
+                <p class="especialista-horario">19:30</p>
+              </div>
+            </div>
+            <div class="especialista-estou-disponivel">
+              Estou disponivel agora
+            </div>
+          </div>
+          <!-- Fim especialista 2-->
+          <!-- Especialista 3 -->
+          <div class="especialista-box">
+            <div class="especialista-box-top">
+              <img src="./img/especialista-foto.png" />
+              <div class="especialista-crpstatus">
+                <div class="especialista-crp">CRP: 04/63459</div>
+                <div class="especialista-status">online</div>
+              </div>
+              <i class="gg-heart" id="fav"></i>
+            </div>
+            <div class="especialista-nome">Pedro Santos Gosler</div>
+            <div class="especialista-idioma-avaliacao">
+              <div class="flex-row-space">
+                <div>
+                  <span class="fi fi-br fis especialista-idioma-flag"></span>
+                </div>
+                <p class="p-14">Português (+2)</p>
+              </div>
+              <div class="flex-row-space">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p class="p-14">4.8</p>
+                <p class="p-10">(48 avaliações)</p>
+              </div>
+            </div>
+            <div class="especialista-valor">R$ 110 / 50 MIN</div>
+            <div class="especialista-experiencias">
+              Experiências
+              <ul>
+                <li>Alterações de Humor</li>
+                <li>Angústia</li>
+                <li>Ansiedade</li>
+                <li>Assertividade</li>
+                <li>Autoconhecimento</li>
+                <li>Autoestima</li>
+                <li>Depressão</li>
+                <li>LGBTQI+</li>
+                <li>Identidade de Gênero / Transsexual / Transgênero</li>
+              </ul>
+            </div>
+            <div class="especialista-agenda">
+              <div class="especialista-agenda-title">
+                <p class="p-14 p-bold">Agenda</p>
+                <p class="p-10 p-regular">+ Veja mais horários</p>
+              </div>
+              <div class="especialista-agenda-horarios">
+                <p class="especialista-horario">14:30</p>
+                <p class="especialista-horario">15:00</p>
+                <p class="especialista-horario">15:30</p>
+                <p class="especialista-horario">16:00</p>
+                <p class="especialista-horario">16:30</p>
+                <p class="especialista-horario">17:00</p>
+                <p class="especialista-horario">17:30</p>
+                <p class="especialista-horario">18:00</p>
+                <p class="especialista-horario">18:30</p>
+                <p class="especialista-horario">19:00</p>
+                <p class="especialista-horario">19:30</p>
+              </div>
+            </div>
+            <div class="especialista-estou-disponivel">
+              Estou disponivel agora
+            </div>
+          </div>
+          <!-- Fim especialista 3-->
+          <!-- Especialista 4 -->
+          <div class="especialista-box">
+            <div class="especialista-box-top">
+              <img src="./img/especialista-foto.png" />
+              <div class="especialista-crpstatus">
+                <div class="especialista-crp">CRP: 04/63459</div>
+                <div class="especialista-status">online</div>
+              </div>
+              <i class="gg-heart" id="fav"></i>
+            </div>
+            <div class="especialista-nome">Pedro Santos Gosler</div>
+            <div class="especialista-idioma-avaliacao">
+              <div class="flex-row-space">
+                <div>
+                  <span class="fi fi-br fis especialista-idioma-flag"></span>
+                </div>
+                <p class="p-14">Português (+2)</p>
+              </div>
+              <div class="flex-row-space">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p class="p-14">4.8</p>
+                <p class="p-10">(48 avaliações)</p>
+              </div>
+            </div>
+            <div class="especialista-valor">R$ 110 / 50 MIN</div>
+            <div class="especialista-experiencias">
+              Experiências
+              <ul>
+                <li>Alterações de Humor</li>
+                <li>Angústia</li>
+                <li>Ansiedade</li>
+                <li>Assertividade</li>
+                <li>Autoconhecimento</li>
+                <li>Autoestima</li>
+                <li>Depressão</li>
+                <li>LGBTQI+</li>
+                <li>Identidade de Gênero / Transsexual / Transgênero</li>
+              </ul>
+            </div>
+            <div class="especialista-agenda">
+              <div class="especialista-agenda-title">
+                <p class="p-14 p-bold">Agenda</p>
+                <p class="p-10 p-regular">+ Veja mais horários</p>
+              </div>
+              <div class="especialista-agenda-horarios">
+                <p class="especialista-horario">14:30</p>
+                <p class="especialista-horario">15:00</p>
+                <p class="especialista-horario">15:30</p>
+                <p class="especialista-horario">16:00</p>
+                <p class="especialista-horario">16:30</p>
+                <p class="especialista-horario">17:00</p>
+                <p class="especialista-horario">17:30</p>
+                <p class="especialista-horario">18:00</p>
+                <p class="especialista-horario">18:30</p>
+                <p class="especialista-horario">19:00</p>
+                <p class="especialista-horario">19:30</p>
+              </div>
+            </div>
+            <div class="especialista-estou-disponivel">
+              Estou disponivel agora
+            </div>
+          </div>
+          <!-- Fim especialista 4-->
+          <!-- Especialista 5 -->
+          <div class="especialista-box">
+            <div class="especialista-box-top">
+              <img src="./img/especialista-foto.png" />
+              <div class="especialista-crpstatus">
+                <div class="especialista-crp">CRP: 04/63459</div>
+                <div class="especialista-status">online</div>
+              </div>
+              <i class="gg-heart" id="fav"></i>
+            </div>
+            <div class="especialista-nome">Pedro Santos Gosler</div>
+            <div class="especialista-idioma-avaliacao">
+              <div class="flex-row-space">
+                <div>
+                  <span class="fi fi-br fis especialista-idioma-flag"></span>
+                </div>
+                <p class="p-14">Português (+2)</p>
+              </div>
+              <div class="flex-row-space">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p class="p-14">4.8</p>
+                <p class="p-10">(48 avaliações)</p>
+              </div>
+            </div>
+            <div class="especialista-valor">R$ 110 / 50 MIN</div>
+            <div class="especialista-experiencias">
+              Experiências
+              <ul>
+                <li>Alterações de Humor</li>
+                <li>Angústia</li>
+                <li>Ansiedade</li>
+                <li>Assertividade</li>
+                <li>Autoconhecimento</li>
+                <li>Autoestima</li>
+                <li>Depressão</li>
+                <li>LGBTQI+</li>
+                <li>Identidade de Gênero / Transsexual / Transgênero</li>
+              </ul>
+            </div>
+            <div class="especialista-agenda">
+              <div class="especialista-agenda-title">
+                <p class="p-14 p-bold">Agenda</p>
+                <p class="p-10 p-regular">+ Veja mais horários</p>
+              </div>
+              <div class="especialista-agenda-horarios">
+                <p class="especialista-horario">14:30</p>
+                <p class="especialista-horario">15:00</p>
+                <p class="especialista-horario">15:30</p>
+                <p class="especialista-horario">16:00</p>
+                <p class="especialista-horario">16:30</p>
+                <p class="especialista-horario">17:00</p>
+                <p class="especialista-horario">17:30</p>
+                <p class="especialista-horario">18:00</p>
+                <p class="especialista-horario">18:30</p>
+                <p class="especialista-horario">19:00</p>
+                <p class="especialista-horario">19:30</p>
+              </div>
+            </div>
+            <div class="especialista-estou-disponivel">
+              Estou disponivel agora
+            </div>
+          </div>
+          <!-- Fim especialista 5-->
+          <!-- Especialista 6 -->
+          <div class="especialista-box">
+            <div class="especialista-box-top">
+              <img src="./img/especialista-foto.png" />
+              <div class="especialista-crpstatus">
+                <div class="especialista-crp">CRP: 04/63459</div>
+                <div class="especialista-status">online</div>
+              </div>
+              <i class="gg-heart" id="fav"></i>
+            </div>
+            <div class="especialista-nome">Pedro Santos Gosler</div>
+            <div class="especialista-idioma-avaliacao">
+              <div class="flex-row-space">
+                <div>
+                  <span class="fi fi-br fis especialista-idioma-flag"></span>
+                </div>
+                <p class="p-14">Português (+2)</p>
+              </div>
+              <div class="flex-row-space">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p class="p-14">4.8</p>
+                <p class="p-10">(48 avaliações)</p>
+              </div>
+            </div>
+            <div class="especialista-valor">R$ 110 / 50 MIN</div>
+            <div class="especialista-experiencias">
+              Experiências
+              <ul>
+                <li>Alterações de Humor</li>
+                <li>Angústia</li>
+                <li>Ansiedade</li>
+                <li>Assertividade</li>
+                <li>Autoconhecimento</li>
+                <li>Autoestima</li>
+                <li>Depressão</li>
+                <li>LGBTQI+</li>
+                <li>Identidade de Gênero / Transsexual / Transgênero</li>
+              </ul>
+            </div>
+            <div class="especialista-agenda">
+              <div class="especialista-agenda-title">
+                <p class="p-14 p-bold">Agenda</p>
+                <p class="p-10 p-regular">+ Veja mais horários</p>
+              </div>
+              <div class="especialista-agenda-horarios">
+                <p class="especialista-horario">14:30</p>
+                <p class="especialista-horario">15:00</p>
+                <p class="especialista-horario">15:30</p>
+                <p class="especialista-horario">16:00</p>
+                <p class="especialista-horario">16:30</p>
+                <p class="especialista-horario">17:00</p>
+                <p class="especialista-horario">17:30</p>
+                <p class="especialista-horario">18:00</p>
+                <p class="especialista-horario">18:30</p>
+                <p class="especialista-horario">19:00</p>
+                <p class="especialista-horario">19:30</p>
+              </div>
+            </div>
+            <div class="especialista-estou-disponivel">
+              Estou disponivel agora
+            </div>
+          </div>
+          <!-- Fim especialista 6-->
+          <!-- Especialista 7 -->
+          <div class="especialista-box">
+            <div class="especialista-box-top">
+              <img src="./img/especialista-foto.png" />
+              <div class="especialista-crpstatus">
+                <div class="especialista-crp">CRP: 04/63459</div>
+                <div class="especialista-status">online</div>
+              </div>
+              <i class="gg-heart" id="fav"></i>
+            </div>
+            <div class="especialista-nome">Pedro Santos Gosler</div>
+            <div class="especialista-idioma-avaliacao">
+              <div class="flex-row-space">
+                <div>
+                  <span class="fi fi-br fis especialista-idioma-flag"></span>
+                </div>
+                <p class="p-14">Português (+2)</p>
+              </div>
+              <div class="flex-row-space">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p class="p-14">4.8</p>
+                <p class="p-10">(48 avaliações)</p>
+              </div>
+            </div>
+            <div class="especialista-valor">R$ 110 / 50 MIN</div>
+            <div class="especialista-experiencias">
+              Experiências
+              <ul>
+                <li>Alterações de Humor</li>
+                <li>Angústia</li>
+                <li>Ansiedade</li>
+                <li>Assertividade</li>
+                <li>Autoconhecimento</li>
+                <li>Autoestima</li>
+                <li>Depressão</li>
+                <li>LGBTQI+</li>
+                <li>Identidade de Gênero / Transsexual / Transgênero</li>
+              </ul>
+            </div>
+            <div class="especialista-agenda">
+              <div class="especialista-agenda-title">
+                <p class="p-14 p-bold">Agenda</p>
+                <p class="p-10 p-regular">+ Veja mais horários</p>
+              </div>
+              <div class="especialista-agenda-horarios">
+                <p class="especialista-horario">14:30</p>
+                <p class="especialista-horario">15:00</p>
+                <p class="especialista-horario">15:30</p>
+                <p class="especialista-horario">16:00</p>
+                <p class="especialista-horario">16:30</p>
+                <p class="especialista-horario">17:00</p>
+                <p class="especialista-horario">17:30</p>
+                <p class="especialista-horario">18:00</p>
+                <p class="especialista-horario">18:30</p>
+                <p class="especialista-horario">19:00</p>
+                <p class="especialista-horario">19:30</p>
+              </div>
+            </div>
+            <div class="especialista-estou-disponivel">
+              Estou disponivel agora
+            </div>
+          </div>
+          <!-- Fim especialista 7-->
+          <!-- Especialista 8 -->
+          <div class="especialista-box">
+            <div class="especialista-box-top">
+              <img src="./img/especialista-foto.png" />
+              <div class="especialista-crpstatus">
+                <div class="especialista-crp">CRP: 04/63459</div>
+                <div class="especialista-status">online</div>
+              </div>
+              <i class="gg-heart" id="fav"></i>
+            </div>
+            <div class="especialista-nome">Pedro Santos Gosler</div>
+            <div class="especialista-idioma-avaliacao">
+              <div class="flex-row-space">
+                <div>
+                  <span class="fi fi-br fis especialista-idioma-flag"></span>
+                </div>
+                <p class="p-14">Português (+2)</p>
+              </div>
+              <div class="flex-row-space">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p class="p-14">4.8</p>
+                <p class="p-10">(48 avaliações)</p>
+              </div>
+            </div>
+            <div class="especialista-valor">R$ 110 / 50 MIN</div>
+            <div class="especialista-experiencias">
+              Experiências
+              <ul>
+                <li>Alterações de Humor</li>
+                <li>Angústia</li>
+                <li>Ansiedade</li>
+                <li>Assertividade</li>
+                <li>Autoconhecimento</li>
+                <li>Autoestima</li>
+                <li>Depressão</li>
+                <li>LGBTQI+</li>
+                <li>Identidade de Gênero / Transsexual / Transgênero</li>
+              </ul>
+            </div>
+            <div class="especialista-agenda">
+              <div class="especialista-agenda-title">
+                <p class="p-14 p-bold">Agenda</p>
+                <p class="p-10 p-regular">+ Veja mais horários</p>
+              </div>
+              <div class="especialista-agenda-horarios">
+                <p class="especialista-horario">14:30</p>
+                <p class="especialista-horario">15:00</p>
+                <p class="especialista-horario">15:30</p>
+                <p class="especialista-horario">16:00</p>
+                <p class="especialista-horario">16:30</p>
+                <p class="especialista-horario">17:00</p>
+                <p class="especialista-horario">17:30</p>
+                <p class="especialista-horario">18:00</p>
+                <p class="especialista-horario">18:30</p>
+                <p class="especialista-horario">19:00</p>
+                <p class="especialista-horario">19:30</p>
+              </div>
+            </div>
+            <div class="especialista-estou-disponivel">
+              Estou disponivel agora
+            </div>
+          </div>
+          <!-- Fim especialista 8-->
+          <!-- Especialista 9 -->
+          <div class="especialista-box">
+            <div class="especialista-box-top">
+              <img src="./img/especialista-foto.png" />
+              <div class="especialista-crpstatus">
+                <div class="especialista-crp">CRP: 04/63459</div>
+                <div class="especialista-status">online</div>
+              </div>
+              <i class="gg-heart" id="fav"></i>
+            </div>
+            <div class="especialista-nome">Pedro Santos Gosler</div>
+            <div class="especialista-idioma-avaliacao">
+              <div class="flex-row-space">
+                <div>
+                  <span class="fi fi-br fis especialista-idioma-flag"></span>
+                </div>
+                <p class="p-14">Português (+2)</p>
+              </div>
+              <div class="flex-row-space">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p class="p-14">4.8</p>
+                <p class="p-10">(48 avaliações)</p>
+              </div>
+            </div>
+            <div class="especialista-valor">R$ 110 / 50 MIN</div>
+            <div class="especialista-experiencias">
+              Experiências
+              <ul>
+                <li>Alterações de Humor</li>
+                <li>Angústia</li>
+                <li>Ansiedade</li>
+                <li>Assertividade</li>
+                <li>Autoconhecimento</li>
+                <li>Autoestima</li>
+                <li>Depressão</li>
+                <li>LGBTQI+</li>
+                <li>Identidade de Gênero / Transsexual / Transgênero</li>
+              </ul>
+            </div>
+            <div class="especialista-agenda">
+              <div class="especialista-agenda-title">
+                <p class="p-14 p-bold">Agenda</p>
+                <p class="p-10 p-regular">+ Veja mais horários</p>
+              </div>
+              <div class="especialista-agenda-horarios">
+                <p class="especialista-horario">14:30</p>
+                <p class="especialista-horario">15:00</p>
+                <p class="especialista-horario">15:30</p>
+                <p class="especialista-horario">16:00</p>
+                <p class="especialista-horario">16:30</p>
+                <p class="especialista-horario">17:00</p>
+                <p class="especialista-horario">17:30</p>
+                <p class="especialista-horario">18:00</p>
+                <p class="especialista-horario">18:30</p>
+                <p class="especialista-horario">19:00</p>
+                <p class="especialista-horario">19:30</p>
+              </div>
+            </div>
+            <div class="especialista-estou-disponivel">
+              Estou disponivel agora
+            </div>
+          </div>
+          <!-- Fim especialista 9-->
+        </div>
+        <div class="especialistas-conhecamais">
+          <button>Carregar mais especialistas</button>
+        </div>
+      </div>
+    </content>
+    <footer>
+      <div class="footer-top">
+        <div>
+          <img src="./img/logo02.png" />
+        </div>
+        <div class="footer-top-right">
+          <div class="footer-links">
+            <a href="" class="link-footer">Acesso Especialistas</a>
+            <a href="" class="link-footer">Seja NOsso Parceiro</a>
+            <a href="" class="link-footer">Trabalhe Conosco</a>
+          </div>
+          <div><img src="./img/social.png" /></div>
+        </div>
+      </div>
+      <div class="footer-direitos">
+        <p>© 2023</p>
+        <p>
+          SM Psicologia - CNPJ: 00.000.000/0001-00 | Endereço: Rua das Flores,
+          336 - 12345-678 Avaré, São Paulo
+        </p>
+      </div>
+      <div class="footer-partners">
+        <img src="./img/logo-julio.png" />
+        <img src="./img/logo-guilherme.png" />
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      let el = document
+        .getElementsByClassName("faq-card")
+        [i].getElementsByClassName("arrow")[0];
+      //   .src =        "./img/arrow-right.png");
+      console.log(el);
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          el.src = "./img/arrow-right.png";
+        } else {
+          content.style.display = "block";
+          el.src = "./img/arrow-down.png";
+        }
+      });
+    }
+  </script>
+
+  <script>
+    function openMenu() {
+      var x = document.getElementById("top-menu");
+      if (x.className === "top-menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "top-menu";
+      }
+    }
+  </script>
+</html>

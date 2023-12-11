@@ -1,0 +1,777 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SM Psicologia</title>
+
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/heart.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html">
+        <img class="logo-top" src="./img/logo01.png" />
+      </a>
+      <div class="top-menu" id="top-menu">
+        <div class="top-menu-group">
+          <a href="#" class="menu-top">Quem Somos</a>
+          <a href="#" class="menu-top">Perguntas Frequentes</a>
+          <a href="especialistas.html" class="menu-top">Parceiros</a>
+          <a href="#" class="menu-top">Sou Especialista</a>
+        </div>
+        <div class="top-menu-group">
+          <a href="#" class="menu-top-dark">Agende sua consulta</a>
+          <a href="#" class="menu-top-light">Entrar</a>
+          <a href="#" class="menu-top-dark">Criar Conta</a>
+        </div>
+      </div>
+      <div class="top-menu-resp">
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <content>
+      <div class="content-top-apresentacao">
+        <div>
+          <img src="./img/alex.png" />
+        </div>
+        <div>
+          <img src="./img/play.png" />
+        </div>
+
+        <div class="content-top-box">
+          <h2>
+            Cuide de você,<br />
+            sem complicações!
+          </h2>
+          <p>
+            Bem-vindo ao nosso espaço de acolhimento e transformação pessoal.
+            Aqui, acreditamos que a saúde mental não deve ser um luxo, mas sim
+            um direito de todos. Estamos aqui para simplificar o caminho em
+            direção a uma mente mais saudável e feliz.
+          </p>
+        </div>
+      </div>
+      <div class="content-agende">
+        <div class="content-agende-consulta">
+          <h2>Agende sua consulta</h2>
+          <div class="especialista-lista-3">
+            <!-- Especialista 1 -->
+            <div class="especialista-box">
+              <div class="especialista-box-top">
+                <img src="./img/especialista-foto.png" />
+                <div class="especialista-crpstatus">
+                  <div class="especialista-crp">CRP: 04/63459</div>
+                  <div class="especialista-status">online</div>
+                </div>
+                <i class="gg-heart" id="fav"></i>
+              </div>
+              <div class="especialista-nome">Pedro Santos Gosler</div>
+              <div class="especialista-idioma-avaliacao">
+                <div class="flex-row-space">
+                  <div>
+                    <span class="fi fi-br fis especialista-idioma-flag"></span>
+                  </div>
+                  <p class="p-14">Português (+2)</p>
+                </div>
+                <div class="flex-row-space">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <p class="p-14">4.8</p>
+                  <p class="p-10">(48 avaliações)</p>
+                </div>
+              </div>
+              <div class="especialista-valor">R$ 110 / 50 MIN</div>
+              <div class="especialista-experiencias">
+                Experiências
+                <ul>
+                  <li>Alterações de Humor</li>
+                  <li>Angústia</li>
+                  <li>Ansiedade</li>
+                  <li>Assertividade</li>
+                  <li>Autoconhecimento</li>
+                  <li>Autoestima</li>
+                  <li>Depressão</li>
+                  <li>LGBTQI+</li>
+                  <li>Identidade de Gênero / Transsexual / Transgênero</li>
+                </ul>
+              </div>
+              <div class="especialista-agenda">
+                <div class="especialista-agenda-title">
+                  <p class="p-14 p-bold">Agenda</p>
+                  <p class="p-10 p-regular">+ Veja mais horários</p>
+                </div>
+                <div class="especialista-agenda-horarios">
+                  <p class="especialista-horario">14:30</p>
+                  <p class="especialista-horario">15:00</p>
+                  <p class="especialista-horario">15:30</p>
+                  <p class="especialista-horario">16:00</p>
+                  <p class="especialista-horario">16:30</p>
+                  <p class="especialista-horario">17:00</p>
+                  <p class="especialista-horario">17:30</p>
+                  <p class="especialista-horario">18:00</p>
+                  <p class="especialista-horario">18:30</p>
+                  <p class="especialista-horario">19:00</p>
+                  <p class="especialista-horario">19:30</p>
+                </div>
+              </div>
+              <div class="especialista-estou-disponivel">
+                Estou disponivel agora
+              </div>
+            </div>
+
+            <!-- Fim especialista 1-->
+            <!-- Especialista 2 -->
+            <div class="especialista-box">
+              <div class="especialista-box-top">
+                <img src="./img/especialista-foto.png" />
+                <div class="especialista-crpstatus">
+                  <div class="especialista-crp">CRP: 04/63459</div>
+                  <div class="especialista-status">online</div>
+                </div>
+                <i class="gg-heart" id="fav"></i>
+              </div>
+              <div class="especialista-nome">Pedro Santos Gosler</div>
+              <div class="especialista-idioma-avaliacao">
+                <div class="flex-row-space">
+                  <div>
+                    <span class="fi fi-br fis especialista-idioma-flag"></span>
+                  </div>
+                  <p class="p-14">Português (+2)</p>
+                </div>
+                <div class="flex-row-space">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <p class="p-14">4.8</p>
+                  <p class="p-10">(48 avaliações)</p>
+                </div>
+              </div>
+              <div class="especialista-valor">R$ 110 / 50 MIN</div>
+              <div class="especialista-experiencias">
+                Experiências
+                <ul>
+                  <li>Alterações de Humor</li>
+                  <li>Angústia</li>
+                  <li>Ansiedade</li>
+                  <li>Assertividade</li>
+                  <li>Autoconhecimento</li>
+                  <li>Autoestima</li>
+                  <li>Depressão</li>
+                  <li>LGBTQI+</li>
+                  <li>Identidade de Gênero / Transsexual / Transgênero</li>
+                </ul>
+              </div>
+              <div class="especialista-agenda">
+                <div class="especialista-agenda-title">
+                  <p class="p-14 p-bold">Agenda</p>
+                  <p class="p-10 p-regular">+ Veja mais horários</p>
+                </div>
+                <div class="especialista-agenda-horarios">
+                  <p class="especialista-horario">14:30</p>
+                  <p class="especialista-horario">15:00</p>
+                  <p class="especialista-horario">15:30</p>
+                  <p class="especialista-horario">16:00</p>
+                  <p class="especialista-horario">16:30</p>
+                  <p class="especialista-horario">17:00</p>
+                  <p class="especialista-horario">17:30</p>
+                  <p class="especialista-horario">18:00</p>
+                  <p class="especialista-horario">18:30</p>
+                  <p class="especialista-horario">19:00</p>
+                  <p class="especialista-horario">19:30</p>
+                </div>
+              </div>
+              <div class="especialista-estou-disponivel">
+                Estou disponivel agora
+              </div>
+            </div>
+            <!-- Fim especialista 2-->
+            <!-- Especialista 3 -->
+            <div class="especialista-box">
+              <div class="especialista-box-top">
+                <img src="./img/especialista-foto.png" />
+                <div class="especialista-crpstatus">
+                  <div class="especialista-crp">CRP: 04/63459</div>
+                  <div class="especialista-status">online</div>
+                </div>
+                <i class="gg-heart" id="fav"></i>
+              </div>
+              <div class="especialista-nome">Pedro Santos Gosler</div>
+              <div class="especialista-idioma-avaliacao">
+                <div class="flex-row-space">
+                  <div>
+                    <span class="fi fi-br fis especialista-idioma-flag"></span>
+                  </div>
+                  <p class="p-14">Português (+2)</p>
+                </div>
+                <div class="flex-row-space">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <p class="p-14">4.8</p>
+                  <p class="p-10">(48 avaliações)</p>
+                </div>
+              </div>
+              <div class="especialista-valor">R$ 110 / 50 MIN</div>
+              <div class="especialista-experiencias">
+                Experiências
+                <ul>
+                  <li>Alterações de Humor</li>
+                  <li>Angústia</li>
+                  <li>Ansiedade</li>
+                  <li>Assertividade</li>
+                  <li>Autoconhecimento</li>
+                  <li>Autoestima</li>
+                  <li>Depressão</li>
+                  <li>LGBTQI+</li>
+                  <li>Identidade de Gênero / Transsexual / Transgênero</li>
+                </ul>
+              </div>
+              <div class="especialista-agenda">
+                <div class="especialista-agenda-title">
+                  <p class="p-14 p-bold">Agenda</p>
+                  <p class="p-10 p-regular">+ Veja mais horários</p>
+                </div>
+                <div class="especialista-agenda-horarios">
+                  <p class="especialista-horario">14:30</p>
+                  <p class="especialista-horario">15:00</p>
+                  <p class="especialista-horario">15:30</p>
+                  <p class="especialista-horario">16:00</p>
+                  <p class="especialista-horario">16:30</p>
+                  <p class="especialista-horario">17:00</p>
+                  <p class="especialista-horario">17:30</p>
+                  <p class="especialista-horario">18:00</p>
+                  <p class="especialista-horario">18:30</p>
+                  <p class="especialista-horario">19:00</p>
+                  <p class="especialista-horario">19:30</p>
+                </div>
+              </div>
+              <div class="especialista-estou-disponivel">
+                Estou disponivel agora
+              </div>
+            </div>
+            <!-- Fim especialista 3-->
+          </div>
+          <div class="especialistas-conhecamais">
+            <button>Conheça mais especialistas</button>
+          </div>
+        </div>
+      </div>
+      <div class="cuidando-sm">
+        <div class="cuidando-sm-foto">
+          <img src="./img/alex e monica 1.png" class="cuidando-sm-foto-media" />
+        </div>
+
+        <div class="cuidando-sm-right">
+          <div class="cuidando-sm-right-top">
+            <div class="cuidando-sm-title">
+              <h2 class="p-justify">Cuidando da sua saúde mental</h2>
+            </div>
+            <p class="p-justify">
+              Na correria da vida moderna, encontrar apoio emocional pode ser
+              desafiador. É por isso que oferecemos a facilidade de agendar
+              consultas online com nossos dedicados profissionais de psicologia.
+              Não importa onde você esteja, estamos aqui para você, 24 horas por
+              dia, 7 dias por semana.
+            </p>
+          </div>
+          <div class="cuidando-sm-right-bottom">
+            <div class="cuidando-sm-right-bottom-left">
+              <p class="p-justify">
+                Acreditamos que todos merecem apoio emocional e estamos
+                empenhados em oferecer cuidados de qualidade.
+              </p>
+              <img src="./img/play.png" class="cuidando-sm-btn-play" />
+              <div class="cuidando-sm-btn-cuidar">
+                Pronto para cuidar de você?
+              </div>
+            </div>
+            <div class="cuidando-sm-right-bottom-right">
+              <div class="cuidando-sm-right-bottom-right-top">
+                <p class="p-justify">
+                  Queremos criar um mundo onde o bem-estar emocional seja uma
+                  prioridade universal.
+                </p>
+                <img src="./img/play.png" class="cuidando-sm-btn-play" />
+              </div>
+              <div class="cuidando-sm-right-bottom-right-bottom">
+                <p class="p-justify">
+                  Valorizamos a empatia, a acessibilidade e a qualidade.
+                </p>
+                <img src="./img/play.png" class="cuidando-sm-btn-play" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-content">
+          <div class="faq-left">
+            <h2>Perguntas Frequentes</h2>
+            <p class="p-bold" style="margin: 0 0.2rem">
+              Nós entendemos que você pode ter algumas perguntas em mente, e
+              estamos aqui para responder a todas elas.
+            </p>
+            <p style="margin-bottom: 0 0.2rem">
+              Abaixo, você encontrará respostas para as perguntas mais comuns
+              sobre nossos serviços, agendamento e muito mais. Se você não
+              encontrar o que procura, não hesite em entrar em contato conosco.
+              Estamos sempre à disposição para ajudar e esclarecer suas dúvidas.
+            </p>
+
+            <!-- FAQ CARD 01 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  Como posso remarcar uma sessão agendada?
+                </p>
+                <div>
+                  <img src="./img/arrow-down.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer">
+              <p class="p-justify">
+                Para reagendar sua sessão, siga estas etapas simples:
+              </p>
+              <ol>
+                <li>Acesse a seção 'Minhas Sessões' em sua conta.</li>
+                <li>
+                  Localize a sessão que deseja reagendar e clique em
+                  'Reagendar'.
+                </li>
+                <li>
+                  Lembre-se de que a disponibilidade para remarcação pode variar
+                  de acordo com a política estabelecida pelo profissional em sua
+                  página.
+                </li>
+              </ol>
+            </div>
+            <!-- END FAQ CARD 01-->
+            <!-- FAQ CARD 02 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  Qual é o processo para agendar uma sessão?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 02-->
+            <!-- FAQ CARD 03 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  Como faço para avaliar o profissional após a sessão?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 03-->
+            <!-- FAQ CARD 04 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  Há atendimento disponível para menores de idade?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 04-->
+            <!-- FAQ CARD 05 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  Estou enfrentando problemas para agendar minha sessão. O que
+                  devo fazer?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 05-->
+            <!-- FAQ CARD 06 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  E se o profissional agendado não comparecer à sessão?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 06-->
+            <!-- FAQ CARD 07 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  Como posso cancelar uma sessão que já agendei?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 07-->
+            <!-- FAQ CARD 08 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  Como posso verificar se minha sessão está confirmada?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 08-->
+            <!-- FAQ CARD 09 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  Como faço para utilizar um cupom de desconto?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 09-->
+            <!-- FAQ CARD 10 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  Quais dispositivos posso usar para participar da sessão?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 10-->
+            <!-- FAQ CARD 11 -->
+            <button type="button" class="collapsible">
+              <div class="faq-card">
+                <p class="p-16 p-bold p-justify">
+                  É necessário ter acesso à internet para realizar minha sessão?
+                </p>
+                <div>
+                  <img src="./img/arrow-right.png" class="arrow" />
+                </div>
+              </div>
+            </button>
+            <div class="faq-card-answer" style="display: none">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+            <!-- END FAQ CARD 11-->
+          </div>
+          <div class="faq-right">
+            <div><h2>&#8205;</h2></div>
+            <div class="faq-whatsapp">
+              <i class="fa fa-whatsapp" style="font-size: 88px"></i>
+              <div>
+                <h2>Quer um contato mais próximo?</h2>
+                <p class="p-14">
+                  Que tal uma conversa para dar início à sua jornada rumo a uma
+                  vida mais saudável e plena? Estamos prontos para ouvir você
+                  pelo WhatsApp. Conte conosco!
+                </p>
+              </div>
+              <p style="font-size: 36px">></p>
+            </div>
+            <div class="faq-form">
+              <h2>Fale Conosco</h2>
+              <form class="faq-form-form">
+                <input type="text" class="form-inputs" placeholder="Nome:" />
+                <input
+                  type="text"
+                  class="form-inputs"
+                  placeholder="Telefone:"
+                />
+                <input type="text" class="form-inputs" placeholder="E-mail:" />
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="form-inputs"
+                  placeholder="Mensagem:"
+                ></textarea>
+                <button class="form-btn">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parceria">
+        <div class="parceria-left">
+          <h2>Junte-se a nós em uma parceria humanizada</h2>
+          <p>Descubra quem são os nossos parceiros.</p>
+          <div class="parceria-parceiros">
+            <div class="parceiros-img">
+              <img src="./img/logo.png" />
+            </div>
+            <div class="parceiros-img">
+              <img src="./img/logo.png" />
+            </div>
+            <div class="parceiros-img">
+              <img src="./img/logo.png" />
+            </div>
+            <div class="parceiros-img">
+              <img src="./img/logo.png" />
+            </div>
+            <div class="parceiros-img">
+              <img src="./img/logo.png" />
+            </div>
+            <div class="parceiros-img">
+              <img src="./img/logo.png" />
+            </div>
+            <div class="parceiros-img">
+              <img src="./img/logo.png" />
+            </div>
+            <div class="parceiros-img">
+              <img src="./img/logo.png" />
+            </div>
+            <div class="parceiros-img">
+              <img src="./img/logo.png" />
+            </div>
+          </div>
+        </div>
+        <div class="parceria-right">
+          <!-- <img src="./img/mulher.png" /> -->
+          <div class="parceria-equipe">
+            <p>
+              Além de nossa equipe de especialistas em saúde mental, acreditamos
+              em abordar o bem-estar de maneira abrangente. Estamos orgulhosos
+              de contar com uma rede de parceiros, incluindo nutricionistas,
+              personal trainers e outros profissionais comprometidos em cuidar
+              de você de forma integral.
+            </p>
+          </div>
+        </div>
+      </div>
+    </content>
+    <footer>
+      <div class="footer-top">
+        <div>
+          <img src="./img/logo02.png" />
+        </div>
+        <div class="footer-top-right">
+          <div class="footer-links">
+            <a href="" class="link-footer">Acesso Especialistas</a>
+            <a href="" class="link-footer">Seja NOsso Parceiro</a>
+            <a href="" class="link-footer">Trabalhe Conosco</a>
+          </div>
+          <div><img src="./img/social.png" /></div>
+        </div>
+      </div>
+      <div class="footer-direitos">
+        <p>© 2023</p>
+        <p>
+          SM Psicologia - CNPJ: 00.000.000/0001-00 | Endereço: Rua das Flores,
+          336 - 12345-678 Avaré, São Paulo
+        </p>
+      </div>
+      <div class="footer-partners">
+        <img src="./img/logo-julio.png" />
+        <img src="./img/logo-guilherme.png" />
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      let el = document
+        .getElementsByClassName("faq-card")
+        [i].getElementsByClassName("arrow")[0];
+      //   .src =        "./img/arrow-right.png");
+      console.log(el);
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          el.src = "./img/arrow-right.png";
+        } else {
+          content.style.display = "block";
+          el.src = "./img/arrow-down.png";
+        }
+      });
+    }
+  </script>
+
+  <script>
+    function openMenu() {
+      var x = document.getElementById("top-menu");
+      if (x.className === "top-menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "top-menu";
+      }
+    }
+  </script>
+</html>

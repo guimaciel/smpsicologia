@@ -1,0 +1,548 @@
+
+
+  .content-top-apresentacao {
+    background-color: #b8b8b8;
+    display: grid;
+    grid-template-columns: 30% 10% 30%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .content-top-box {
+    border-radius: 12px;
+    padding: 2rem;
+    row-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  
+  .content-agende {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content-agende-consulta {
+    margin: 0;
+    margin-top: -50px;
+    padding: 0rem 5rem;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+  }
+  .content-agende-consulta > h2 {
+    margin: 1rem -1rem;
+  }
+  
+  .especialista-lista-3 {
+    display: grid;
+    grid-template-columns: 23rem 23rem 23rem;
+    column-gap: 1rem;
+  }
+  
+  .especialista-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem 1rem;
+  }
+  
+  .especialista-box-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .especialista-crpstatus {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  
+  .especialista-crp {
+    padding: 0.5rem 2rem;
+    border: 1px solid #000;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  
+  .especialista-status {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 12px;
+    font-size: 12px;
+    background-color: #4f4f4f;
+    color: #fff;
+  }
+  
+  .especialista-nome {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .especialista-idioma-flag {
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  
+  .especialista-idioma-avaliacao {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .flex-row-space {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  .flex-row-space > p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .especialista-valor {
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 12px;
+    background-color: #d7d7d7;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .especialista-experiencias {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+  }
+
+  .especialista-agenda {
+    display: flex;
+    flex-direction: column;
+  }
+  .especialista-agenda-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .especialista-agenda-horarios {
+    display: flex;
+    column-gap: 0.5rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+  
+  .especialista-agenda-horarios::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Define the thumb style */
+  .especialista-agenda-horarios::-webkit-scrollbar-thumb {
+    background: #4f4f4f;
+    border-radius: 5px;
+  }
+  /* Define the track style */
+  .especialista-agenda-horarios::-webkit-scrollbar-track {
+    background-color: #d9d9d9;
+    border: 1px solid #ccc;
+  }
+  
+  .especialista-horario {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin: 0;
+  }
+  
+  .especialista-agenda-horarios .especialista-horario:first-child {
+    margin-left: auto;
+  }
+  
+  .especialista-agenda-horarios .especialista-horario:last-child {
+    margin-right: auto;
+  }
+  
+  .especialista-estou-disponivel {
+    margin: 1rem 0;
+    border-radius: 12px;
+    background-color: #4f4f4f;
+    color: #fff;
+    font-size: 14px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .especialistas-conhecamais {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .especialistas-conhecamais > button {
+    background-color: #4f4f4f;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem 7rem;
+    border-radius: 12px;
+  }
+  
+  .cuidando-sm {
+    display: grid;
+    grid-template-columns: 30% 50%;
+    column-gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  
+  .cuidando-sm-foto {
+    background-image: url("../img/alex e monica 1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+  }
+  
+  .cuidando-sm-foto-media {
+    display: none;
+  }
+  
+  .cuidando-sm-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+    margin: 0;
+  }
+  .cuidando-sm-right-bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .cuidando-sm-right-top,
+  .cuidando-sm-right-bottom-right-top,
+  .cuidando-sm-right-bottom-right-bottom {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+    padding: 1rem 2rem 1rem 2rem;
+    justify-items: center;
+  }
+  
+  .cuidando-sm-title {
+    justify-self: start;
+    
+  }
+  
+  .cuidando-sm-right-top > p {
+    text-align: justify;
+  }
+  
+  .cuidando-sm-btn-cuidar {
+    font-size: 20px;
+    background-color: #4f4f4f;
+    border-radius: 12px;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .cuidando-sm-right-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1rem;
+    margin: 0;
+  }
+  
+  .cuidando-sm-right-bottom-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    margin: 0;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+    padding: 2rem;
+  }
+  
+  .cuidando-sm-btn-play {
+    max-width: 7rem;
+    height: auto;
+    align-self: center;
+  }
+  
+  .faq {
+    background-color: #b8b8b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    row-gap: 1rem;
+  }
+  
+  .faq-content {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+    column-gap: 3rem;
+  }
+  
+  .faq-left {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+  
+  .faq-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  
+  .faq-card-answer {
+    background-color: #fff;
+    margin: 0;
+    margin-top: -1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .collapsible {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: #b8b8b800;
+    padding: 0;
+    display: block;
+  }
+  
+  .arrow {
+    padding: 0;
+    margin: 0;
+    margin-top: -0.5rem;
+  }
+  
+  .faq-whatsapp {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: #cacaca;
+    border-radius: 12px;
+  }
+  
+  .faq-form {
+    background-color: #fff;
+    border-radius: 12px;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faq-form-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  
+  .form-inputs {
+    border-radius: 12px;
+    border: solid 1px #7a7a7a;
+    padding: 0.3rem 1rem;
+  }
+  
+  .form-btn {
+    margin: 0 10rem;
+    background-color: #4f4f4f;
+    border-radius: 12px;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 20px;
+    border: 0;
+  }
+  
+  .parceria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 5rem 0 5rem;
+    column-gap: 1rem;
+  
+  }
+  
+  .parceria-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .parceria-parceiros {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .parceiros-img {
+    margin: 1rem;
+    border: solid 1px #7a7a7a;
+    border-radius: 12px;
+    width: 176px;
+    height: 176px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .parceria-right {
+    background-image: url("../img/mulher.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .parceria-equipe {
+    margin-top: 4rem;
+    border-radius: 12px;
+    background-color: #878787;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 1rem;
+    width: 480px;
+  }
+
+  @media (max-width: 1600px) {
+    .content-top-apresentacao {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .content-agende-consulta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem;
+    }
+    .especialista-lista-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .especialista-box {
+      max-width: none;
+      display: grid;
+      grid-template-columns: 100%;
+      margin: 1rem;
+      padding: 1rem;
+      max-width: 600px;
+      width: fit-content;
+    }
+  
+    .cuidando-sm-foto {
+      /* display: none; */
+      display: flex;
+      flex-direction: column;
+      background-image: none;
+      align-items: center;
+    }
+  
+    .cuidando-sm-foto-media {
+      display: flex;
+      flex-direction: column;
+      /* width: 10rem; */
+      background-color: #D9D9D9;
+  
+    }
+  
+    .cuidando-sm, .cuidando-sm-right, .cuidando-sm-right-top, .cuidando-sm-right-bottom, .cuidando-sm-right-bottom-left, .cuidando-sm-right-bottom-right, .cuidando-sm-right-bottom-right-top, .cuidando-sm-right-bottom-right-bottom {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      /* margin: 1rem; */
+    }
+  
+    .cuidando-sm-right-bottom-right {
+      margin: 0;
+      padding: 0;
+      column-gap: 1rem;
+    }
+  
+    .faq-content {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .parceria {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+  
+    .parceria-right {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-position: center;
+      align-items: center;
+      background-size: cover;
+      padding: 1rem;
+    }
+  
+    .parceria-equipe {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+    }
+   
+  }

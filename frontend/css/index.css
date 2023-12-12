@@ -350,8 +350,13 @@
     border-radius: 12px;
   }
   
+  .faq a {
+    text-decoration: none;
+    color: #000;
+  }
   .collapsible {
     text-decoration: none;
+    color: #000;
     border: none;
     outline: none;
     background-color: #b8b8b800;

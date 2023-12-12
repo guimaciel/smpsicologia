@@ -1,0 +1,298 @@
+content {
+    background-color: #ebebeb;
+}
+
+.box-especialista {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 2rem;
+    padding: 2rem;
+    column-gap: 5rem;
+}
+
+.especialista-exp-apresent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.especialista-apresentacao {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    background-color: #d9d9d9;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 12px;
+    column-gap: 1rem;
+    font-weight: 700;
+    font-size: 12px;
+    align-items: center;
+}
+
+.especialista-box-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .especialista-crpstatus {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  
+  .especialista-crp {
+    padding: 0.5rem 2rem;
+    border: 1px solid #000;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  
+  .especialista-status {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 12px;
+    font-size: 12px;
+    background-color: #4f4f4f;
+    color: #fff;
+  }
+  
+  .especialista-nome {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .especialista-idioma-flag {
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  
+  .especialista-idioma-avaliacao {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .flex-row-space {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  .flex-row-space > p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .especialista-valor {
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 12px;
+    background-color: #d7d7d7;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .especialista-experiencias {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+  }
+
+  .idioma {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2rem 10%;
+    border: none;
+    /* row-gap: 0.5rem; */
+    align-items: center;
+  }
+
+  .idioma li { 
+    display: inline;
+    list-style-type: none;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 100%;
+  }
+
+  .box-especialista-right {
+    display: flex;
+    flex-direction: column;
+    max-height: 100rem;
+  }
+
+  .box-especialista-agenda {
+    display: grid;
+    grid-template-columns: 2rem repeat(7, 5rem) 2rem;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .agenda-day {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0;
+    padding: 0;
+    margin: 0;
+    
+  }
+  .agenda-day > p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .agenda-top {
+    background-color: #d9d9d9;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .agenda-hours {
+    padding: 0;
+  }
+
+  .agenda-hours > p {
+    border-radius: 12px;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  .agenda-hours > p.busy {
+    background-color: #d9d9d9;
+    cursor: default;
+  }
+
+  .agenda-hours > p:first-child, .agenda-hours > p:last-child {
+    border: none;
+  }
+
+  .box-especialista-agenda-scroll {
+    overflow-y: scroll;
+  }
+
+  .box-especialista-agenda-scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Define the thumb style */
+  .box-especialista-agenda-scroll::-webkit-scrollbar-thumb {
+    background: #4f4f4f;
+    border-radius: 5px;
+  }
+  /* Define the track style */
+  .box-especialista-agenda-scroll::-webkit-scrollbar-track {
+    background-color: #d9d9d9;
+    border: 1px solid #ccc;
+  }
+
+  .video-blur {
+    display: none;
+    position: fixed;
+    background-color: #000000ce;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-show {
+    display: flex;
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    padding-top: 39.375%;
+  }
+
+  .iframe-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 1rem solid #fff;
+    border-radius: 12px;
+  }
+
+@media (max-width: 1400px) {
+    .box-especialista {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-especialista-right { 
+        height: 50rem;
+    }
+}
+
+@media (max-width: 900px) { 
+    .especialista-box-top, .especialista-idioma-avaliacao, .especialista-nome, .especialista-valor, .especialista-apresentacao, .box-especialista-right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 99%;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
+    }
+    .especialista-exp-apresent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .especialista-experiencias, .especialista-experiencias > p {
+        width: 90%;
+    }
+
+    .box-especialista-agenda {
+        column-gap: 0.1rem;
+        padding: 0.1rem 0;
+        row-gap: 0;
+    }
+    .box-especialista-agenda > p {
+        padding: 1rem 0;
+        margin: 0;
+        word-wrap: break-word;
+    }
+
+    .agenda-day {
+        column-gap: 0;
+    }
+
+    .box-especialista-agenda-scroll {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        /* max-width: 90%; */
+        overflow-x: scroll;
+
+    }
+
+}

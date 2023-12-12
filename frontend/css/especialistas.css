@@ -40,6 +40,8 @@ select {
 
 select:focus {
     outline: none;
+    background-color: #fff;
+    color: #000;
 }
 
 .especialistas {

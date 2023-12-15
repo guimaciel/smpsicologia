@@ -300,10 +300,35 @@ content {
     display: none;
     visibility: hidden;
   }
+
+  .especialista-box-top, .especialista-idioma-avaliacao, .especialista-nome, .especialista-valor, .especialista-experiencias {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .especialista-exp-apresent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 530px) {
+  .box-especialista {
+    margin: 0;
+    padding: 0;
+  }
   .agenda-day-header:nth-last-child(-n+5), .agenda-day-column:nth-last-child(-n+5) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 380px) {
+  .agenda-day-header:nth-last-child(-n+6), .agenda-day-column:nth-last-child(-n+6) {
     display: none;
     visibility: hidden;
   }
